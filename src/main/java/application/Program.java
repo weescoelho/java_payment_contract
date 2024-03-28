@@ -41,7 +41,7 @@ public class Program {
         List<Installment> contractInstallmentsList = contract.getInstallments();
 
         for(  Installment installment : contractInstallmentsList) {
-            System.out.println(installment.getDueDate().format(fmt) + " - " + installment.getAmount());
+            System.out.println(installment.getDueDate().format(fmt) + " - " + String.format("%.2f", installment.getAmount()));
         }
 
 
